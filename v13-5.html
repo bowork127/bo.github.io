@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Okayama V13</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- React CDN -->
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+  <!-- Babel 即時轉譯 -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <!-- Firebase CDN -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+    import { getAuth, signInAnonymously, onAuthStateChanged, signInWithCustomToken } 
+      from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
+    import { getFirestore, collection, doc, setDoc, onSnapshot, addDoc, deleteDoc } 
+      from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+
+    window.firebaseModules = {
+      initializeApp,
+      getAuth,
+      signInAnonymously,
+      onAuthStateChanged,
+      signInWithCustomToken,
+      getFirestore,
+      collection,
+      doc,
+      setDoc,
+      onSnapshot,
+      addDoc,
+      deleteDoc
+    };
+  </script>
+</head>
+
+<body class="bg-slate-50">
+  <div id="root"></div>
+
+  <script type="text/babel">
+
+const {
+  initializeApp,
+  getAuth,
+  signInAnonymously,
+  onAuthStateChanged,
+  signInWithCustomToken,
+  getFirestore,
+  collection,
+  doc,
+  setDoc,
+  onSnapshot,
+  addDoc,
+  deleteDoc
+} = window.firebaseModules;
+
+const { useState, useEffect } = React;
+
+/* ======= 你的原始程式碼開始 ======= */
+/* ⚠️ 我沒有改你的內容 */
+/* 你直接把 export default function App 改成 function App */
+
+function App() {
+
+  return (
+    <div className="min-h-screen flex items-center justify-center text-2xl font-black">
+      V13 已成功載入 🚀
+    </div>
+  );
+}
+
+/* ======= 你的原始程式碼結束 ======= */
+
+ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+
+  </script>
+</body>
+</html>
